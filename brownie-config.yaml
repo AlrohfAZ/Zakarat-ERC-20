@@ -1,0 +1,22 @@
+autofetch_sources: true
+compiler:
+  solc:
+    remappings:
+      - "@chainlink=smartcontractkit/chainlink-brownie-contracts@0.4.0"
+      - "@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.3.2"
+dependencies:
+  - smartcontractkit/chainlink-brownie-contracts@0.4.0
+  - OpenZeppelin/openzeppelin-contracts@4.3.2
+networks:
+  default: development
+  development:
+    keyhash: "0x6c3699283bda56ad74f6b855546325b68d482e983852a7a82979cc4807b641f4"
+    verify: false
+  ganache:
+    keyhash: "0x6c3699283bda56ad74f6b855546325b68d482e983852a7a82979cc4807b641f4"
+    verify: false
+  goerli:
+    keyhash: "0x79d3d8832d904592c0bf9818b621522c988bb8b0c05cdc3b15aea1b6e8db0c15"
+    verify: false
+wallets:
+  from_key: ${PRIVATE_KEY}
